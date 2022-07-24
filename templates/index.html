@@ -12,7 +12,7 @@
         .heading {
             color: white;
             text-align: center;
-            margin: 50px 0 70px 0;
+            margin: 35px 0 50px 0;
         }
 
         .login form {
@@ -60,17 +60,26 @@
             text-decoration: none;
             color: white;
         }
+        
         .creator {
             color: white;
             text-align: end;
             padding-right: 10px;
         }
+        
+        @media only screen and (max-width: 1140px) {
+            .login form {
+                    grid-template-columns: repeat(4, auto);
+            }
+        }
+        
     </style>
 </head>
 
 <body>
 <div class="heading">
     <h1>Enter the values for cancer features</h1>
+    <p>Enter only float values</P>
 </div>
 <div class="login">
     <div>
